@@ -8,8 +8,8 @@ Project1:Portion/traj_example_lfk.py 是使用五次规划实现物块搬运，�
 
 - Project1:Portion/proj1_simulation_nyc  
     |-- traj_simulation.py  
-        |-- main file contain complete trajectory  
+    - main file contain complete trajectory  
     |-- until.py  
-        |-- necessary module  
+    - necessary module  
     |-- ik.py  
-        |--necessary module
+    - necessary module
