@@ -237,20 +237,6 @@ def traj_example():
             state = False
 
 
-        # # 重新开始一次循环
-        # if t >= 30:
-        #     print('Control Finished')
-        #     break
-        # # 通过时间与规划目标关节位置的关系，得到挡墙时刻下期望机械臂关节到达的位置
-        # if t < 5:
-        #     q = until.quinticCurveExcute2(k_start2box1,)
-        # elif t >= 6 and t <11:
-        #     q = until.quinticCurveExcute2(k_box12A,t-6)
-        # elif t > 12 and t < 22:
-        #     q = until.quinticCurveExcute2(k_A2B,t-12)
-        # elif t > 23 and t < 28:
-        #     q = until.quinticCurveExcute2(k_B2end,t-23)
-        # 控制机械臂运动，syncMove输入格式为6*1的np.array，单位为度，代表的含义是当前周期下机械臂关节的位置
         # 注意速度约束
         r.syncMove(np.reshape(q, (6, 1)))
         # 更新时间
